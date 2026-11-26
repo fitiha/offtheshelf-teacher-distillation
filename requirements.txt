@@ -1,0 +1,8 @@
+# Packages imported or installed in the notebooks.
+# None of the notebooks pin specific package versions (executed under Python 3.12.13 in Kaggle/Colab).
+torch
+transformers
+datasets
+accelerate
+matplotlib
+

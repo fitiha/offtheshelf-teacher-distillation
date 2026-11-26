@@ -1,0 +1,30 @@
+{
+  "title": "Does an Off-the-Shelf Teacher Help Small Student Language Models? Evidence From TinyStories",
+  "upload_type": "software",
+  "description": "Knowledge distillation, in which a small \"student\" model is trained to match the output distribution of a larger, pretrained \"teacher\" model, has been shown to improve sample efficiency in small language models when the teacher is itself trained from scratch on the target corpus (Timiryasov and Tastet, 2023; Tastet and Timiryasov, 2024), leaving open whether the same benefit holds for the simpler, substantially cheaper variant a resource-constrained practitioner would more likely attempt first: a single, off-the-shelf, frozen teacher not fine-tuned on the target corpus. This report tests that open question directly. We train five student models, ranging from 7.24M to 19.22M parameters, on the TinyStories corpus, with and without distillation, and additionally sweep the distillation weight alpha across four values. Contrary to our initial hypothesis, we find that distillation from an off-the-shelf GPT-2 teacher does not improve validation cross-entropy loss at any tested student size; instead, distillation benefit decreases monotonically and consistently as more weight is placed on the teacher signal, becoming a clear net harm at low alpha and converging to zero (no effect) as alpha -> 1, exactly as expected once the teacher's contribution is removed from the loss. We further test whether this harm generalizes: a second, structurally different off-the-shelf teacher (GPT-Neo-125M) reproduces the same pattern at every size tested, and holding the teacher fixed while replacing the target corpus with a domain closer to the teacher's own pretraining distribution (WikiText-2, in place of TinyStories) substantially reduces, though does not eliminate, the harm at every teacher and size tested. Together, this evidence points to domain mismatch, rather than a property specific to one teacher or capacity mismatch alone, as the primary driver of the observed harm. We report this negative result in detail, including a metric error we discovered and corrected during the study, and discuss its implications for the practice of using off-the-shelf teachers in small-scale distillation.",
+  "creators": [
+    {
+      "name": "Weldeananiya, Natnael F.",
+      "affiliation": "Gheero",
+      "orcid": "TODO: 0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "knowledge distillation",
+    "small language models",
+    "sample-efficient pretraining",
+    "off-the-shelf teacher",
+    "domain mismatch",
+    "TinyStories",
+    "negative results"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "TODO: PAPER_DOI",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}
+

@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Hugging Face Trainer checkpoints and notebook output directories
+baseline_student/
+distilled_student/
+small_baseline/
+medium_baseline/
+xsmall_baseline/
+zoom_baseline/
+tiny_baseline_v2/
+tiny_alpha_*/
+zoom_alpha_*/
+medium_alpha_*/
+tiny_alpha025_v2/
+zoom_alpha025_v2/
+medium_alpha025_v2/
+run_*/
+masked_*/
+neo_distill_*/
+wiki_*/
+wiki_neo_*/
+checkpoints/
+outputs/
+results/
+
+# Saved model weights and generated figures
+*.safetensors
+*.bin
+*.pt
+*.pth
+distillation_gap_vs_size.png
+distillation_gap_full.png
+

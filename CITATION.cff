@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying preprint, please cite it using the metadata below."
+type: software
+title: "Does an Off-the-Shelf Teacher Help Small Student Language Models? Evidence From TinyStories"
+version: 1.0.0
+date-released: "2026-11-26"
+license: MIT
+repository-code: "https://github.com/fitiha/offtheshelf-teacher-distillation"
+authors:
+  - family-names: Weldeananiya
+    given-names: Natnael F.
+    orcid: "TODO: https://orcid.org/0000-0000-0000-0000"
+preferred-citation:
+  type: article
+  title: "Does an Off-the-Shelf Teacher Help Small Student Language Models? Evidence From TinyStories"
+  authors:
+    - family-names: Weldeananiya
+      given-names: Natnael F.
+      orcid: "TODO: https://orcid.org/0000-0000-0000-0000"
+  year: 2026
+  month: 8
+  doi: "TODO: PAPER_DOI"
+  notes: "Preprint, not peer reviewed. Work done at Gheero, August 2026."
+
